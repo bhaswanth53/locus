@@ -1,5 +1,6 @@
 # Locus Framework
 ![](assets/images/logo.png)
+
 Locus is a mini framework for PHP. In other words, we can consider it as a project structure instead of a framework. Because Locus is just a combination of multiple packages of PHP.
 
 The main aim of the Locus framework is to combine front-end preset with core PHP development. We used Laravel Mix in this framework. By default Locus comes with React preset. But you can create any preset as per your need. Hope we release other presets very soon.
