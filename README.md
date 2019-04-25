@@ -13,6 +13,12 @@ To use this framework you can use simply download this repository and extract yo
 git clone https://github.com/bhaswanth53/locus.git
 ``
 
+Or if you are using **Composer**, then install as follows.
+
+```
+composer create-project bhaswanth97/locus
+```
+
 Once the project is installed, the file structure will look like as follows.
 
 ```
