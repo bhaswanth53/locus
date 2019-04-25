@@ -1,4 +1,11 @@
 {
+	"name": "bhaswanth97/locus",
+    "type": "project",
+    "description": "The Locus Framework.",
+    "keywords": [
+        "framework",
+        "locus"
+    ],
 	"autoload": {
 		"psr-4": {
 			"Controllers\\": "Controllers/",
