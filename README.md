@@ -9,7 +9,7 @@ The main aim of the Locus framework is to combine front-end preset with core PHP
 To use this framework you can use simply download this repository and extract you your project. In other hands, if you use git, you can clone it by using the below command.
 
 ``
-git clone url
+git clone https://github.com/bhaswanth53/locus.git
 ``
 
 Once the project is installed, the file structure will look like as follows.
