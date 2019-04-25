@@ -1,0 +1,31 @@
+#root { 
+    display: flex; 
+    width: 100%; 
+    height: 95vh; 
+    margin: auto; 
+    border-radius: 10px; 
+} 
+#root div { 
+    margin: auto; /* Important */ 
+    text-align: center; 
+}
+
+#root img {
+    width: 90%;
+}
+
+#root div a {
+    font-family: 'Heebo', sans-serif;
+    padding: 10px;
+    color: #333333;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.error p {
+    font-family: 'Heebo', sans-serif;
+    padding: 10px;
+    color: #777;
+    text-decoration: none;
+    font-size: 30px;
+}
