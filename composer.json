@@ -18,5 +18,7 @@
 		"phpmailer/phpmailer": "^6.0",
 		"catfan/medoo": "^1.6",
 		"rakit/validation": "^1.1"
-    }
+    },
+	"minimum-stability": "dev",
+    "prefer-stable": true
 }
