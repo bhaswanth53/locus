@@ -32,7 +32,7 @@
     function asset($string)
     {
         global $config;
-        $string = $config['APP_PATH']."public/" . $string;
+        $string = $config['APP_PATH']."/public/" . $string;
         return $string;
     }
 
