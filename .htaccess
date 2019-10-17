@@ -1,2 +1,13 @@
-RewriteEngine on
-RewriteRule ^([a-zA-Z0-9\-\_\/]*)$ public/$1
+<IfModule mod_rewrite.c>
+    <IfModule mod_negotiation.c>
+        Options -MultiViews
+    </IfModule>
+    RewriteEngine on
+
+    <Files env.php>
+        Order allow,deny
+        Deny from all
+    </Files>
+
+    RewriteRule ^([a-zA-Z0-9\-\_\/]*)$ public/$1
+</IfModule>
