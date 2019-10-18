@@ -2,6 +2,12 @@
     require '../vendor/autoload.php';
     require "../helpers.php";
 
+    $error_path = "../logs/".date('Y-m-d').".log";
+    // $error_path = "../PHP_errors.log";
+
+    ini_set("log_errors", 1);
+    ini_set("error_log", $error_path);
+
     $router = new AltoRouter();
 
     $path = env("APP_PATH");
@@ -18,9 +24,10 @@
         $obj = new $controller();
         echo call_user_func_array(array($obj, $action), array($match['params']));
     }
-    elseif($match['target']=='')
+    elseif(isset($match) && isset($match['target']))
     {
-        echo 'Error: no route was matched'; 
+        if($match['target']=='')
+            echo 'Error: no route was matched'; 
     }
     else {
         header("HTTP/1.0 404 Not Found");
