@@ -8,7 +8,8 @@
         "locus"
     ],
     "require": {
-        "altorouter/altorouter": "1.1.0"
+        "altorouter/altorouter": "1.1.0",
+        "phpmailer/phpmailer": "^6.1"
     },
     "autoload": {
 		"psr-4": {
@@ -19,4 +20,3 @@
     "minimum-stability": "dev",
     "prefer-stable": true
 }
-

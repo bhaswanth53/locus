@@ -30,3 +30,4 @@ php_flag html_errors off
 
 # enable logging of errors
 php_flag log_errors on
+
