@@ -46,7 +46,6 @@
     }
 
     /* Asset & URL Utilities */
-
     function asset($string)
     {
         global $config;
@@ -178,10 +177,7 @@
         return false;
     }
 
-    
-
     /* Random String Generator */
-
     function str_random($length = 5) {
         $characters = '0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ';
         $charactersLength = strlen($characters);
@@ -190,4 +186,14 @@
             $randomString .= $characters[rand(0, $charactersLength - 1)];
         }
         return $randomString;
+    }
+
+    /* Data Utilities */
+    function any($first, $second)
+    {
+        if(isset($first) && !empty($first))
+        {
+            return $first;
+        }
+        return $second;
     }

@@ -7,8 +7,10 @@
     $error_path = "../logs/".date('Y-m-d').".log";
     // $error_path = "../PHP_errors.log";
 
-    ini_set("log_errors", 1);
-    ini_set("error_log", $error_path);
+    if(env('APP_DEBUG') === true) {
+        ini_set("log_errors", 1);
+        ini_set("error_log", $error_path);
+    }
 
     $router = new AltoRouter();
 
