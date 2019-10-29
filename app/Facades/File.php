@@ -16,6 +16,19 @@
             return $this->files[$file];
         }
 
+        public function validateImageSizes($image, $width=0, $height=0)
+        {
+            $image_info = getimagesize($image["tmp_name"]);
+            $image_width = $image_info[0];
+            $image_height = $image_info[1];
+
+            if($image_width < $width || $image_height < $height)
+            {
+                return false;
+            }
+            return true;
+        }
+
         public function upload($file, $path="", $name="")
         {
             $file_name = $file['name'];
