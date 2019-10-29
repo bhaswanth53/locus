@@ -61,6 +61,16 @@
         return $string;
     }
 
+    function request_is($query)
+    {
+        $string = request_path();
+        if(substr($string, 0, strlen($query)) === $query)
+        {
+            return true;
+        }
+        return false;
+    }
+
     function url($string = "")
     {
         global $config;
